@@ -1,0 +1,8 @@
+subnet {{.Subnet}} netmask {{.Netmask}} {
+    range {{.RangeStart}} {{.RangeEnd}};
+    option routers {{.Router}};
+    option subnet-mask {{.Netmask}};
+    option domain-name-servers {{.DNSServer}};
+    default-lease-time {{.DefaultLease}};
+    max-lease-time {{.MaxLease}};
+}
