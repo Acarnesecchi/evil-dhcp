@@ -23,7 +23,7 @@ func CreateConfigFile(config DHCPConfig) {
 	}
 
 	// Execute the template with the configuration data and write the result to a file
-	file, err := os.Create("dhcpd.conf")
+	file, err := os.Create("evil-dhcp/dhcpd.conf")
 	if err != nil {
 		panic(err)
 	}
